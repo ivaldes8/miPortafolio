@@ -1,0 +1,45 @@
+{
+  "navList.tema1":"About me",
+  "navList.tema2":"Project",
+  "navList.tema3":"Education",
+  "navList.tema4":"Skills",
+
+  "navBar.home":"Home",
+  "navBar.who":"Who we are?",
+  "navBar.theme":"Theme",
+    "navBar.theme.ligth":"Ligth",
+    "navBar.theme.dark":"Dark",
+    "navBar.theme.blue":"Blue",
+
+  "aboutMe.who":"Who I am?",
+    "aboutMe.who.text":"A Computer Science Engineer specialized in web development.",
+  "aboutMe.mision":"My mission",
+    "aboutMe.mision.text":"Developing web applications whose complexity is a challenge.",
+  "aboutMe.vision":"My vision",
+    "aboutMe.vision.text":"Being a web developer par excellence, whose work and projects meet the highest software quality standards.",
+
+  "project.disaic":"As Specialist B, I made 100% of this API, both in the frontend (Angular), and in the backend (Laravel).",
+  "project.sAmarillo":"As a web developer, I implemented this site using Django.",
+  "project.controlPack":"As a web developer, I carried out the task of developing the angular frontend of one of the APIs of that company.",
+
+  "skill.design":"Desing skills",
+  "skill.languages":"Programming languages",
+  "skill.frameworks":"Frameworks skills",
+  "skill.oder":"Oders skills",
+  "skill.idiom":"Language",
+    "skill.idiom.english":"English level B2",
+    "skill.idiom.spanish":"Spanish native",
+
+  "education.basica":"Primary education",
+    "education.basica.school":"Patricio Lumumba",
+    "education.basica.date":"2001-2008",
+  "education.media":"Secondary education",
+    "education.media.school":"José Antonio Echeverría Bianchi",
+    "education.media.date":"2008-2011",
+  "education.mediaSuperior":"Pre-university education",
+    "education.mediaSuperior.school":"IPU Jesús Suárez Gayol",
+    "education.mediaSuperior.date":"2011-2014",
+  "education.superior":"University degree ",
+    "education.superior.school":"Universidad de las Ciencias Informáticas",
+    "education.superior.date":"2015-2020"
+}
