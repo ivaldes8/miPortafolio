@@ -1,0 +1,46 @@
+{
+
+  "navList.tema1":"Quién soy",
+  "navList.tema2":"Projectos",
+  "navList.tema3":"Educación",
+  "navList.tema4":"Habilidades",
+
+  "navBar.home":"Inicio",
+  "navBar.who":"Quiénes somos?",
+  "navBar.theme":"Tema",
+    "navBar.theme.ligth":"Blanco",
+    "navBar.theme.dark":"Oscuro",
+    "navBar.theme.blue":"Azul",
+
+  "aboutMe.who":"Quién soy?",
+    "aboutMe.who.text":"Un Ingeniero en Ciencias Informáticas especializado en el desarrollo web.",
+  "aboutMe.mision":"Mi Misión",
+    "aboutMe.mision.text":"Desarrollar aplicaciones web cuya complegidad constituya todo un desafío.",
+  "aboutMe.vision":"Mi Visión",
+    "aboutMe.vision.text":"Ser un desarrollador web por exelencia, cuyo trabajo y proyectos cumplan con los más altos estándares de calidad de software.",
+
+  "project.disaic":"Como Especialista B, hice el 100% de esta API, tanto en el frontend(Angular), como en el backend(Laravel).",
+  "project.sAmarillo":"Como desarrollador web, implementé este sitio usando Django.",
+  "project.controlPack":"Como desarrollador web, desempeñé la tarea de desarrollar el frontend en angular de una de las APIs de esa empresa.",
+
+  "skill.design":"Habilidades de diseño",
+  "skill.languages":"Lenguajes de programación",
+  "skill.frameworks":"Habilidades con Frameworks",
+  "skill.oder":"Otras Habilidades",
+  "skill.idiom":"Idioma",
+    "skill.idiom.english":"Inglés nivel B2",
+    "skill.idiom.spanish":"Español nativo",
+
+  "education.basica":"Enseñanza Primaria",
+    "education.basica.school":"Patricio Lumumba",
+    "education.basica.date":"2001-2008",
+  "education.media":"Enseñanza Media",
+    "education.media.school":"José Antonio Echeverría Bianchi",
+    "education.media.date":"2008-2011",
+  "education.mediaSuperior":"Enseñanza Media-Superior",
+    "education.mediaSuperior.school":"IPU Jesús Suárez Gayol",
+    "education.mediaSuperior.date":"2011-2014",
+  "education.superior":"Enseñanza Superior",
+    "education.superior.school":"Universidad de las Ciencias Informáticas",
+    "education.superior.date":"2015-2020"
+}
