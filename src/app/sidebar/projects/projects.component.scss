@@ -24,13 +24,13 @@
   box-sizing: border-box;
 }
 
-.box .imgBx img{
+.box .imgBx div{
   max-width: 100%;
   opacity: 0.1;
   transition: 0.5s;
 }
 
-.box:hover .imgBx img{
+.box:hover .imgBx div{
   opacity: 1;
 }
 
