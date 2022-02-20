@@ -7,7 +7,7 @@ import { EducationComponent } from './education/education.component';
 import { HabilidadesComponent } from './habilidades/habilidades.component';
 import { ThreeModule } from '../background/three.module';
 import { TranslateModule } from '@ngx-translate/core';
-
+import  {  NgxProgressiveImgLoaderModule  }  from  'ngx-progressive-img-loader';
 
 
 
@@ -17,7 +17,8 @@ import { TranslateModule } from '@ngx-translate/core';
   imports: [
     CommonModule,
     ThreeModule,
-    TranslateModule
+    TranslateModule,
+    NgxProgressiveImgLoaderModule,
   ]
 })
 export class SidebarModule { }
