@@ -83,11 +83,11 @@ export class ThreeComponent{
 
   configComposer(){
     let godRaysEffect = new GodRaysEffect(this.camera, this.circle, {
-      //resolutionScale: 2,
-      //density: 0.6,
-      decay: 1,
-      weight:0.2,
-      samples:10
+     resolutionScale: 0.5,
+      density: 0.6,
+      decay: 0.95,
+      weight:0.9,
+      samples:100
     })
     let renderPass = new RenderPass(this.scene, this.camera);
     let effectPass = new EffectPass(this.camera,godRaysEffect)
@@ -146,8 +146,8 @@ export class ThreeComponent{
     this.circle = new THREE.Mesh(circleGeo,circleMat);
     this.circle.position.z = 1000;
     this.circle.rotation.x= 600;
-    this.circle.position.x = -1000;
-    this.circle.position.y = 400;
+    this.circle.position.x = 0;
+    this.circle.position.y = 500;
     this.circle.scale.setX(1.0);
     this.scene.add(this.circle);
   }

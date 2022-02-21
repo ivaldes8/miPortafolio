@@ -16,7 +16,8 @@ export interface Theme {
       "--background-secondary": "#A3B9CC",
       "--background-tertiary": "#5C7D99",
 
-      "--background-navbar": "linear-gradient(135deg,#c2bfbf,#73b1eb,#0272d400)",
+      "--background-navbar": "radial-gradient(circle, rgba(194,191,191,0.21332282913165268) 6%, rgba(115,177,235,1) 47%, rgba(194,191,191,1) 100%)",
+      "--background-sidebar": "linear-gradient(135deg,#c2bfbf,#73b1eb,#0272d400)",
       "--background-cards":  "linear-gradient(135deg,#73b1eb85,#0272d400)",
       "--color-text": "#343a40",
       "--color-text-hover": "#41474d",
@@ -50,7 +51,8 @@ export interface Theme {
       "--background-light": "#41474D",
 
 
-      "--background-navbar": "linear-gradient(135deg,#111111,#2e465c,#0272d400)",
+      "--background-navbar": "radial-gradient(circle, rgba(17,17,17,0.23853291316526615) 6%, rgba(46,70,92,1) 47%, rgba(17,17,17,1) 100%)",
+      "--background-sidebar": "linear-gradient(135deg,#111111,#2e465c,#0272d400)",
       "--background-cards":  "linear-gradient(135deg,#2e465c85,#0272d400)",
       "--color-text": "#ffffff",
       "--color-text-hover": "#b9b9b9",
@@ -78,7 +80,8 @@ export interface Theme {
       "--foreground-quaternary": "#E5E5E5",
       "--foreground-light": "#FFFFFF",
 
-      "--background-navbar": "linear-gradient(135deg,#022c6b,#0576da,#0272d400)",
+      "--background-sidebar": "linear-gradient(135deg,#022c6b,#0576da,#0272d400)",
+      "--background-navbar": "radial-gradient(circle, rgba(2,44,107,0.22452731092436973) 6%, rgba(0,66,124,1) 47%, rgba(2,114,212,1) 100%)",
       "--background-cards":  "linear-gradient(135deg,#0576da85,#0272d400)",
       "--color-text": "#ffffff",
       "--color-text-hover": "#b9b9b9",

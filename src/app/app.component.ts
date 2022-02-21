@@ -42,6 +42,9 @@ export class AppComponent{
           }
       });
   }
+
+  this.themeService.setBlueTheme();
+
 }
 
   selectedLanguage(event:any){
@@ -49,7 +52,6 @@ export class AppComponent{
   }
 
   selectTheme(event){
-    //console.log(event)
     if(event.target.text == "Dark" || event.target.text == "Oscuro"){
       this.themeService.setDarkTheme();
     }
