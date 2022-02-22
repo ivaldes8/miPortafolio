@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 import { ThemeService } from './theme/theme.service';
 import { SwUpdate } from '@angular/service-worker';
+import { LanguageService } from './services/language.service';
 
 @Component({
   selector: 'app-root',
@@ -26,8 +27,10 @@ export class AppComponent{
     }
   }
 
-  constructor(private translate: TranslateService, private themeService: ThemeService, private swUpdate: SwUpdate){
+  constructor(private translate: TranslateService, private themeService: ThemeService, private swUpdate: SwUpdate, private languageService: LanguageService){
     translate.setDefaultLang('es');
+    this.languageService.setItem('language', 'es')
+    console.log(this.translate.getLangs(), 'WAKALA')
   }
 
 
@@ -49,6 +52,7 @@ export class AppComponent{
 
   selectedLanguage(event:any){
     this.translate.use(event.target.value);
+    this.languageService.setItem('language', event.target.value)
   }
 
   selectTheme(event){

@@ -1,29 +1,15 @@
 <div class="row">
-  <div class="col-12 col-xl-4 col-md-6 mb-4">
-      <div class="single-box">
-        <h2>{{ 'aboutMe.who' | translate }}</h2>
-        <p>{{ 'aboutMe.who.text' | translate }}</p>
-      </div>
+  <div *ngIf = "loading" class="single-box text-center col-12">
+    <i style="color: var(--background-cards);" class="p-2 mt-5 fa fa-spinner animated faa-spin fa-4x"></i>
   </div>
+</div>
 
-  <div class="col-12 col-xl-4 col-md-6 mb-4">
-    <div >
+<div class="row" *ngIf = "!loading">
+  <div class="col-12 col-xl-4 col-md-6 mb-4" *ngFor="let item of data">
       <div class="single-box">
-        <h2>{{ 'aboutMe.mision' | translate }}</h2>
-        <p>{{ 'aboutMe.mision.text' | translate }}</p>
+        <h2>{{ lang === 'es' ? item.tittleEs : item.tittleEn }}</h2>
+        <p>{{ lang === 'es' ? item.textEs : item.textEn }}</p>
       </div>
-    </div>
-  </div>
-
-  <div class="col-12 col-xl-4 col-md-6 mb-4">
-    <div >
-      <div class="single-box">
-        <h2>{{ 'aboutMe.vision' | translate }}</h2>
-        <p>
-          {{ 'aboutMe.vision.text' | translate }}
-        </p>
-      </div>
-    </div>
   </div>
 </div>
 <br>

@@ -1,4 +1,8 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, Input, OnChanges, OnInit, SimpleChanges } from '@angular/core';
+import { GenericService } from '../../services/generic.service';
+import { ToastrService } from 'ngx-toastr';
+import { TranslateService } from '@ngx-translate/core';
+import { LanguageService } from 'src/app/services/language.service';
 
 @Component({
   selector: 'app-about-me',
@@ -7,9 +11,34 @@ import { Component, OnInit } from '@angular/core';
 })
 export class AboutMeComponent implements OnInit {
 
-  constructor() { }
+  data: any[] = []
+  loading = false
+  lang = 'es'
 
-  ngOnInit(): void {
+  constructor(private genericService: GenericService, private toast: ToastrService, private translate: TranslateService, private languageService: LanguageService) { }
+
+  async ngOnInit() {
+    await this.fetchData()
+    this.languageService.watchStorage().subscribe((data: string) => {
+      this.lang = localStorage.getItem('language')
+    })
+  }
+
+
+  async fetchData() {
+    this.toggleLoading()
+    await this.genericService.getAboutMe().subscribe(data => {
+      Object.assign(this.data, data['aboutMe']);
+
+    }, error => {
+      console.log(error, 'ERROR')
+      this.toast.error('Error while getting about me data, check you internet connection')
+    })
+    this.toggleLoading()
+  }
+
+  toggleLoading() {
+    this.loading = !this.loading
   }
 
 }
