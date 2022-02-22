@@ -1,114 +1,195 @@
-
-
 <app-three></app-three>
 
 <div class="wrapper">
-
   <nav id="sidebar" class="{{ customClass }} bg-gradient-sidebar">
-
     <div class="sidebar-header">
-        <h3><img class="img-fluid" src="./assets/IGV.png" alt="" style="border-radius: 110px;border: 2px solid #fff;width: 80%;"></h3>
-        <strong><img style="width: 90%;border-radius: 110px;border: 2px solid #fff;" src="./assets/IGV.png" alt="">IGV</strong>
+      <strong
+        ><img
+          style="width: 110%; border-radius: 110px; border: 2px solid #fff"
+          src="./assets/IGV.png"
+          alt=""
+        />IGV
+      </strong>
     </div>
-      <ul class="list-unstyled components">
-          <li class="active">
-              <ul class="list-unstyled">
-                <li>
-                  <a id = "item" class="list-group-item list-group-item-action bg-transparent" routerLink = 'aboutme' routerLinkActive = 'active'>
-                    <i class="fa fa-child p-2 faa-wrench animated-hover"></i>
-                    {{ 'navList.tema1' | translate }}
-                  </a>
-                </li>
-                <li><a id = "item" class="list-group-item list-group-item-action bg-transparent" routerLink = 'projects' routerLinkActive = 'active'><i class="fa fa-paperclip p-2 faa-wrench animated-hover"></i>{{ 'navList.tema2' | translate }}</a></li>
-                <li><a id = "item" class="list-group-item list-group-item-action bg-transparent" routerLink = 'education' routerLinkActive = 'active'><i class="fa fa-mortar-board p-2 faa-wrench animated-hover"></i>{{ 'navList.tema3' | translate }}</a></li>
-                <li><a id = "item" class="list-group-item list-group-item-action bg-transparent" routerLink = 'skills' routerLinkActive = 'active'><i class="fa fa-puzzle-piece p-2 faa-wrench animated-hover"></i>{{ 'navList.tema4' | translate }}</a></li>
-                <br><br>
-                <br><br>
-              </ul>
+    <ul class="list-unstyled components">
+      <li class="active">
+        <ul class="list-unstyled mb-1">
+          <li>
+            <a
+              id="item"
+              class="list-group-item list-group-item-action bg-transparent"
+              routerLink="aboutme"
+              routerLinkActive="active"
+            >
+              <i class="fa fa-child p-2 faa-wrench animated-hover"></i>
+              {{ "navList.tema1" | translate }}
+            </a>
           </li>
-      </ul>
+          <li>
+            <a
+              id="item"
+              class="list-group-item list-group-item-action bg-transparent"
+              routerLink="projects"
+              routerLinkActive="active"
+              ><i class="fa fa-paperclip p-2 faa-wrench animated-hover"></i
+              >{{ "navList.tema2" | translate }}</a
+            >
+          </li>
+          <li>
+            <a
+              id="item"
+              class="list-group-item list-group-item-action bg-transparent"
+              routerLink="education"
+              routerLinkActive="active"
+              ><i class="fa fa-mortar-board p-2 faa-wrench animated-hover"></i
+              >{{ "navList.tema3" | translate }}</a
+            >
+          </li>
+          <li>
+            <a
+              id="item"
+              class="list-group-item list-group-item-action bg-transparent"
+              routerLink="skills"
+              routerLinkActive="active"
+              ><i class="fa fa-puzzle-piece p-2 faa-wrench animated-hover"></i
+              >{{ "navList.tema4" | translate }}</a
+            >
+          </li>
+          <br /><br />
+          <br /><br />
+        </ul>
+      </li>
+    </ul>
   </nav>
 
   <div id="content" class="{{ customClass }}">
-      <nav class="navbar navbar-expand-lg sticky-top bg-gradient">
-          <button class="btn btn-primary active" (click) = "toggle()"><i class="fa fa-align-left"></i></button>
-          <!--<a id="brand" class="">Iván González Valdés</a>-->
-          <button class="navbar-toggler btn btn-primary active" type="button" (click)="isMenuCollapsed = !isMenuCollapsed" [attr.aria-expanded]="!isCollapsed" aria-controls="collapseBasic">
-          <i class="fa fa-bars"></i>
-          </button>
-          <div class="collapse navbar-collapse" [ngbCollapse]="isMenuCollapsed" id="collapseBasic" >
-            <ul class="navbar-nav mr-auto">
-              <li class="nav-item">
-                <a class="nav-link active box" id="item2" routerLink = "dashboard"><i class="fa fa-grav faa-wrench animated-hover pr-2 s-2 lightBar" style="font-size: 150%;"></i>Iván González Valdés</a>
-              </li>
-            </ul>
-            <div class="btn-group ml-auto" dropdown>
-              <ul class="navbar-nav ml-auto">
-                <li class="nav-item" ngbDropdown display="dynamic" placement="bottom-right">
-                  <a class="nav-link" tabindex="0" ngbDropdownToggle id="navbarDropdown3" role="button">
-                    <i class="fa fa-paint-brush"></i>
-                    {{ 'navBar.theme' | translate }}
-                    <span class="fa fa-sort-down"></span>
-                  </a>
-                  <div ngbDropdownMenu aria-labelledby="navbarDropdown3" class="dropdown-menu">
-                    <a ngbDropdownItem (click) = "selectTheme($event)">{{ 'navBar.theme.ligth' | translate }}</a>
-                    <a ngbDropdownItem (click) = "selectTheme($event)">{{ 'navBar.theme.dark' | translate }}</a>
-                    <a ngbDropdownItem (click) = "selectTheme($event)">{{ 'navBar.theme.blue' | translate }}</a>
-                  </div>
-                </li>
-              </ul>
-            </div>
-
-            <ul class="navbar-nav ml-auto">
-              <li class="nav-item">
-                <a class="nav-link active"><i class="fa fa-language p-1 s-2"></i></a>
-              </li>
-              <li class="nav-item">
-                <select class="form-control" (change)="selectedLanguage($event)">
-                  <option value="es">Español</option>
-                  <option value="en">English</option>
-                </select>
-              </li>
-            </ul>
-          </div>
-        </nav>
-
-
-
-        <div class="container">
-          <router-outlet></router-outlet>
+    <nav class="navbar navbar-expand-lg sticky-top bg-gradient">
+      <button class="btn btn-primary active" (click)="toggle()">
+        <i class="fa fa-align-left"></i>
+      </button>
+      <!--<a id="brand" class="">Iván González Valdés</a>-->
+      <button
+        class="navbar-toggler btn btn-primary active"
+        type="button"
+        (click)="isMenuCollapsed = !isMenuCollapsed"
+        [attr.aria-expanded]="!isCollapsed"
+        aria-controls="collapseBasic"
+      >
+        <i class="fa fa-bars"></i>
+      </button>
+      <div
+        class="collapse navbar-collapse"
+        [ngbCollapse]="isMenuCollapsed"
+        id="collapseBasic"
+      >
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link active box" id="item2" routerLink="dashboard"
+              ><i
+                class="fa fa-grav faa-wrench animated-hover pr-2 s-2 lightBar"
+                style="font-size: 150%"
+              ></i
+              >Iván González Valdés</a
+            >
+          </li>
+        </ul>
+        <div class="btn-group ml-auto" dropdown>
+          <ul class="navbar-nav ml-auto">
+            <li
+              class="nav-item"
+              ngbDropdown
+              display="dynamic"
+              placement="bottom-right"
+            >
+              <a
+                class="nav-link"
+                tabindex="0"
+                ngbDropdownToggle
+                id="navbarDropdown3"
+                role="button"
+              >
+                <i class="fa fa-paint-brush"></i>
+                {{ "navBar.theme" | translate }}
+                <span class="fa fa-sort-down"></span>
+              </a>
+              <div
+                ngbDropdownMenu
+                aria-labelledby="navbarDropdown3"
+                class="dropdown-menu"
+              >
+                <a ngbDropdownItem (click)="selectTheme($event)">{{
+                  "navBar.theme.ligth" | translate
+                }}</a>
+                <a ngbDropdownItem (click)="selectTheme($event)">{{
+                  "navBar.theme.dark" | translate
+                }}</a>
+                <a ngbDropdownItem (click)="selectTheme($event)">{{
+                  "navBar.theme.blue" | translate
+                }}</a>
+              </div>
+            </li>
+          </ul>
         </div>
 
-        <ngx-scrolltop
-          [backgroundColor]="'rgba(1, 22, 112, 0.5)'"
-          [symbolColor]="'#fafafa'"
-          [size]="40"
-          [mode]="'classic'"
-          position="right"
-          theme="gray">
-        </ngx-scrolltop>
-        <footer  class="text-center bg-gradient">
-          <div class="container">
-            <div class="row">
-                  <div class="col-12 ">
-                    <div class="btnContact">
-                      <a class=""><i class="fa fa-at faa-wrench animated pr-1"></i>kaosolution8@gmail.com</a>
-                    </div>
-                    <div class="btnContact">
-                      <a class=""><i class="fa fa-phone-square faa-wrench animated pr-1"></i>+535-8478592</a>
-                    </div>
-                    <div class="btnContact">
-                      <a class=""><i class="fa fa-map-marker faa-wrench animated pr-1"></i>Avenida 51 #10614 E/Calle 106 y Calle 108</a>
-                    </div>
-                  </div>
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link active"
+              ><i class="fa fa-language p-1 s-2"></i
+            ></a>
+          </li>
+          <li class="nav-item">
+            <select class="form-control" (change)="selectedLanguage($event)">
+              <option value="es">Español</option>
+              <option value="en">English</option>
+            </select>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="container">
+      <router-outlet></router-outlet>
+    </div>
+
+    <ngx-scrolltop
+      [backgroundColor]="'rgba(1, 22, 112, 0.5)'"
+      [symbolColor]="'#fafafa'"
+      [size]="40"
+      [mode]="'classic'"
+      position="right"
+      theme="gray"
+    >
+    </ngx-scrolltop>
+    <footer class="text-center bg-gradient">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="btnContact">
+              <a class=""
+                ><i class="fa fa-at faa-wrench animated pr-1"></i
+                >kaosolution8@gmail.com</a
+              >
             </div>
-            <div class="row">
-              <div class="col-12">
-                <p class="pt-3">Copyright © IGVWebsite. All rights reserved.</p>
-              </div>
+            <div class="btnContact">
+              <a class=""
+                ><i class="fa fa-phone-square faa-wrench animated pr-1"></i
+                >+535-8478592</a
+              >
+            </div>
+            <div class="btnContact">
+              <a class=""
+                ><i class="fa fa-map-marker faa-wrench animated pr-1"></i
+                >Avenida 51 #10614 E/Calle 106 y Calle 108</a
+              >
             </div>
           </div>
-        </footer>
-
+        </div>
+        <div class="row">
+          <div class="col-12">
+            <p class="pt-3">Copyright © IGVWebsite. All rights reserved.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
   </div>
 </div>

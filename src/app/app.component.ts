@@ -12,7 +12,7 @@ export class AppComponent{
   title = 'Portafolio';
 
   isCollapsed = true;
-  customClass = '';
+  customClass = 'active';
   toggleSidebar = false;
   collapsed = true;
   public isMenuCollapsed = true;
