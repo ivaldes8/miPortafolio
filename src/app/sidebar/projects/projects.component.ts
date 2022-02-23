@@ -15,7 +15,7 @@ export class ProjectsComponent implements OnInit {
   loading = false
   lang = 'es'
 
-  constructor(private genericService: GenericService, private toast: ToastrService, private translate: TranslateService, private languageService: LanguageService) { }
+  constructor(private genericService: GenericService, private toast: ToastrService, private languageService: LanguageService) { }
 
   async ngOnInit() {
     await this.fetchData()

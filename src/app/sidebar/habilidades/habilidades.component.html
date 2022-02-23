@@ -1,52 +1,17 @@
-<div class="row">
+<div class="row mb-5" *ngIf = "loading" >
+  <div class="center text-center col-12" style="color: white;">
+    <i style="color: var(--background-cards);" class="p-2 mt-5 mb-5 fa fa-spinner animated faa-spin fa-4x"></i>
+  </div>
+</div>
+<div class="row" *ngIf = "!loading">
   <div class="col-12 col-md-12 col-xl-4">
     <div class="center mb-4">
       <h3>{{ 'skill.design' | translate }}</h3>
-      <div class="skillBox">
-        <p>Html5</p>
-        <p>90%</p>
+      <div class="skillBox" *ngFor="let item of dataDesign">
+        <p>{{item.tittle}}</p>
+        <p>{{item.percent}}</p>
         <div class="skill">
-          <div class="skill_level" style="width: 90%;">
-          </div>
-        </div>
-      </div>
-      <div class="skillBox">
-        <p>CSS3</p>
-        <p>80%</p>
-        <div class="skill">
-          <div class="skill_level" style="width: 80%;">
-          </div>
-        </div>
-      </div>
-      <div class="skillBox">
-        <p>SASS</p>
-        <p>80%</p>
-        <div class="skill">
-          <div class="skill_level" style="width: 80%;">
-          </div>
-        </div>
-      </div>
-      <div class="skillBox">
-        <p>Adobe PhotoShop</p>
-        <p>50%</p>
-        <div class="skill">
-          <div class="skill_level" style="width: 50%;">
-          </div>
-        </div>
-      </div>
-      <div class="skillBox">
-        <p>Adobe Illustrator</p>
-        <p>30%</p>
-        <div class="skill">
-          <div class="skill_level" style="width: 30%;">
-          </div>
-        </div>
-      </div>
-      <div class="skillBox">
-        <p>Adobe Dimensions</p>
-        <p>30%</p>
-        <div class="skill">
-          <div class="skill_level" style="width: 30%;">
+          <div class="skill_level" style="width: {{item.percent}};">
           </div>
         </div>
       </div>
@@ -56,51 +21,11 @@
   <div class="col-12 col-md-12 col-xl-4">
     <div class="center mb-4">
       <h3>{{ 'skill.languages' | translate }}</h3>
-      <div class="skillBox">
-        <p>JavaScript</p>
-        <p>95%</p>
+      <div class="skillBox" *ngFor="let item of dataLanguage">
+        <p>{{item.tittle}}</p>
+        <p>{{item.percent}}</p>
         <div class="skill">
-          <div class="skill_level" style="width: 95%;">
-          </div>
-        </div>
-      </div>
-      <div class="skillBox">
-        <p>TypeScript</p>
-        <p>90%</p>
-        <div class="skill">
-          <div class="skill_level" style="width: 90%;">
-          </div>
-        </div>
-      </div>
-      <div class="skillBox">
-        <p>PHP</p>
-        <p>70%</p>
-        <div class="skill">
-          <div class="skill_level" style="width: 70%;">
-          </div>
-        </div>
-      </div>
-      <div class="skillBox">
-        <p>Java</p>
-        <p>60%</p>
-        <div class="skill">
-          <div class="skill_level" style="width: 60%;">
-          </div>
-        </div>
-      </div>
-      <div class="skillBox">
-        <p>Python</p>
-        <p>70%</p>
-        <div class="skill">
-          <div class="skill_level" style="width: 70%;">
-          </div>
-        </div>
-      </div>
-      <div class="skillBox">
-        <p>C#</p>
-        <p>40%</p>
-        <div class="skill">
-          <div class="skill_level" style="width: 40%;">
+          <div class="skill_level" style="width: {{item.percent}};">
           </div>
         </div>
       </div>
@@ -110,67 +35,11 @@
   <div class="col-12 col-md-12 col-xl-4">
     <div class="center mb-4">
       <h3>{{ 'skill.frameworks' | translate }}</h3>
-      <div class="skillBox">
-        <p>Vuejs</p>
-        <p>95%</p>
+      <div class="skillBox" *ngFor="let item of dataFramework">
+        <p>{{item.tittle}}</p>
+        <p>{{item.percent}}</p>
         <div class="skill">
-          <div class="skill_level" style="width: 90%;">
-          </div>
-        </div>
-      </div>
-      <div class="skillBox">
-        <p>Angular</p>
-        <p>90%</p>
-        <div class="skill">
-          <div class="skill_level" style="width: 90%;">
-          </div>
-        </div>
-      </div>
-      <div class="skillBox">
-        <p>React</p>
-        <p>80%</p>
-        <div class="skill">
-          <div class="skill_level" style="width: 90%;">
-          </div>
-        </div>
-      </div>
-      <div class="skillBox">
-        <p>Laravel8</p>
-        <p>85%</p>
-        <div class="skill">
-          <div class="skill_level" style="width: 85%;">
-          </div>
-        </div>
-      </div>
-      <div class="skillBox">
-        <p>BootStrap4</p>
-        <p>95%</p>
-        <div class="skill">
-          <div class="skill_level" style="width: 95%;">
-          </div>
-        </div>
-      </div>
-      <div class="skillBox">
-        <p>LoopBack4</p>
-        <p>80%</p>
-        <div class="skill">
-          <div class="skill_level" style="width: 80%;">
-          </div>
-        </div>
-      </div>
-      <div class="skillBox">
-        <p>Django</p>
-        <p>50%</p>
-        <div class="skill">
-          <div class="skill_level" style="width: 50%;">
-          </div>
-        </div>
-      </div>
-      <div class="skillBox">
-        <p>ThreeJs</p>
-        <p>65%</p>
-        <div class="skill">
-          <div class="skill_level" style="width: 65%;">
+          <div class="skill_level" style="width: {{item.percent}};">
           </div>
         </div>
       </div>
@@ -194,7 +63,11 @@
       <h3>{{ 'skill.oder' | translate }}</h3>
       <hr>
       <h5 style="color: white;">{{ 'skill.teamwork' | translate }}</h5>
-      <p>GIT,PIP, NPM, Linux, VisualStudio Code,NetBeans, PyCharm.</p>
+      <p>
+        <ng-container *ngFor="let item of dataOther">
+          {{item.tittle}},
+        </ng-container>
+      </p>
     </div>
   </div>
 </div>
