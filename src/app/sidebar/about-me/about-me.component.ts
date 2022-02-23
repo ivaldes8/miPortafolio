@@ -27,13 +27,14 @@ export class AboutMeComponent implements OnInit {
 
   async fetchData() {
     this.toggleLoading()
-    await this.genericService.getAboutMe().subscribe(data => {
-      Object.assign(this.data, data['aboutMe']);
-
-    }, error => {
+    await this.genericService.getAboutMe()
+    .then((data) => {
+      this.data = data['aboutMe']
+    })
+    .catch((error) => {
       console.log(error, 'ERROR')
       this.toast.error('Error while getting about me data, check you internet connection')
-    })
+    });
     this.toggleLoading()
   }
 
