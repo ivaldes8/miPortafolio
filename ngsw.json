@@ -1,6 +1,6 @@
 {
   "configVersion": 1,
-  "timestamp": 1645579574209,
+  "timestamp": 1645632797052,
   "index": "https://ivaldes8.github.io/miPortafolio/index.html",
   "assetGroups": [
     {
@@ -13,7 +13,7 @@
       "urls": [
         "https://ivaldes8.github.io/miPortafolio/favicon.ico",
         "https://ivaldes8.github.io/miPortafolio/index.html",
-        "https://ivaldes8.github.io/miPortafolio/main.fba6066bd677202a57ca.js",
+        "https://ivaldes8.github.io/miPortafolio/main.d7ecd5a45580e14f3adf.js",
         "https://ivaldes8.github.io/miPortafolio/manifest.webmanifest",
         "https://ivaldes8.github.io/miPortafolio/polyfills.91ef510d1529865a923f.js",
         "https://ivaldes8.github.io/miPortafolio/runtime.7b63b9fd40098a2e8207.js",
@@ -138,8 +138,8 @@
     "https://ivaldes8.github.io/miPortafolio/fontawesome-webfont.8b43027f47b20503057d.eot": "d980c2ce873dc43af460d4d572d441304499f400",
     "https://ivaldes8.github.io/miPortafolio/fontawesome-webfont.c1e38fd9e0e74ba58f7a.svg": "98a8aa5cf7d62c2eff5f07ede8d844b874ef06ed",
     "https://ivaldes8.github.io/miPortafolio/fontawesome-webfont.f691f37e57f04c152e23.woff": "28b782240b3e76db824e12c02754a9731a167527",
-    "https://ivaldes8.github.io/miPortafolio/index.html": "3a92b60eae0077d418fe97bf9822f2eff54f7caa",
-    "https://ivaldes8.github.io/miPortafolio/main.fba6066bd677202a57ca.js": "88a5fb32189bc1f0d529b8d24ee55bbdfaee8bcf",
+    "https://ivaldes8.github.io/miPortafolio/index.html": "9bac4e55d615348ac22cc5e6c8b5bb68020b77ba",
+    "https://ivaldes8.github.io/miPortafolio/main.d7ecd5a45580e14f3adf.js": "99437d2b007bbe3a1c5f4f9855885bd3a29771ae",
     "https://ivaldes8.github.io/miPortafolio/manifest.webmanifest": "67b0526b981ad192619af1e3e659fe9f3543a2c3",
     "https://ivaldes8.github.io/miPortafolio/polyfills.91ef510d1529865a923f.js": "a5081f9061cd4695295ba7c6e6e43104c81f2a70",
     "https://ivaldes8.github.io/miPortafolio/runtime.7b63b9fd40098a2e8207.js": "a9aafcf49f49145093fc831efd9b8e2f6c71bb9c",
