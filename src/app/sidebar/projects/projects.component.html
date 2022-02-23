@@ -4,7 +4,7 @@
   </div>
 </div>
 <div class="row" *ngIf = "!loading">
-  <div class="col-12 col-md-6 col-xl-4 mb-4" style="margin-left: 100px;" *ngFor="let item of data">
+  <div class="col-12 col-md-6 col-xl-4 mb-4"  *ngFor="let item of data">
     <div class="box">
       <div class="imgBx">
         <div>
@@ -19,7 +19,8 @@
       </div>
       <div class="content">
         <h2>
-          <a href="http://www.disaic.cu">{{item.name}}</a>
+          <a *ngIf = "!item.link" style="text-decoration: none;">{{item.name}}</a>
+          <a *ngIf = "item.link" href="{{item.link}}">{{item.name}}</a>
           <br />
           <span>
            {{ lang === 'es' ? item.textEs : item.textEn }}
