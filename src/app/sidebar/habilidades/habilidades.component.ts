@@ -20,10 +20,6 @@ export class HabilidadesComponent implements OnInit {
 
   async ngOnInit() {
     await this.fetchData()
-    console.log(this.dataDesign, 'Data D')
-    console.log(this.dataLanguage, 'Data L')
-    console.log(this.dataFramework, 'Data F')
-    console.log(this.dataOther, 'Data O')
   }
 
   async fetchData() {
@@ -37,7 +33,7 @@ export class HabilidadesComponent implements OnInit {
     })
     .catch((error) => {
       console.log(error, 'ERROR')
-      this.toast.error('Error while getting projects data, check you internet connection')
+      this.toast.error('Error while getting Skills data, check you internet connection')
     });
     this.toggleLoading()
   }
