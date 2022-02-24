@@ -83,11 +83,11 @@ export class ThreeComponent{
 
   configComposer(){
     let godRaysEffect = new GodRaysEffect(this.camera, this.circle, {
-     resolutionScale: 0.5,
-      density: 0.6,
-      decay: 0.95,
-      weight:0.9,
-      samples:100
+     resolutionScale: 0.2,
+      density: 0.4,
+      decay: 0.97,
+      weight:0.7,
+      samples:50
     })
     let renderPass = new RenderPass(this.scene, this.camera);
     let effectPass = new EffectPass(this.camera,godRaysEffect)
