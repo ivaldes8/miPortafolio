@@ -31,6 +31,7 @@
     "ngx-progressive-img-loader": "^0.1.0",
     "ngx-scrolltop": "^2.3.1",
     "ngx-toastr": "^13.2.1",
+    "pdfmake": "^0.2.5",
     "postprocessing": "^6.21.2",
     "rxjs": "^6.6.6",
     "three": "^0.126.1",

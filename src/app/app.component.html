@@ -92,6 +92,15 @@
               >Iván González Valdés</a
             >
           </li>
+          <li class="nav-item ml-2" *ngIf="!loading">
+            <a class="nav-link active box" id="item2" (click)="generatePdf('download')"
+              ><i
+                class="fa fa-download faa-wrench animated-hover pr-2 s-2 lightBar"
+                style="font-size: 150%"
+              ></i
+              >{{ "navList.download" | translate }}</a
+            >
+          </li>
         </ul>
         <div class="btn-group ml-auto" dropdown>
           <ul class="navbar-nav ml-auto">
